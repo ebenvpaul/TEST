@@ -20,6 +20,8 @@ $(function() {
             $.ajax({
                 url: "./Mailer/contactme.php",
                 type: "POST",
+                crossDomain: true,
+                dataType: 'jsonp',
                 data: {
                     name: name,
                     phone: phone,
